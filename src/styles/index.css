@@ -58,3 +58,11 @@ input[type='range'] {
 	outline: none;
 	-webkit-appearance: none;
 }
+
+.disabled {
+	cursor: not-allowed;
+}
+
+.disabled input[type='range'] {
+	pointer-events: none;
+}

@@ -1,5 +1,5 @@
 /**
- * @author Tanay Wagh <tanay.wagh@314ecorp.com>
+ * @author Tanay Wagh <tanaypwagh@gmail.com>
  * @description Entry point of appplication
  */
 

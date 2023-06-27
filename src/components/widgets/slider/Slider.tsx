@@ -1,5 +1,5 @@
 /**
- * @author Tanay Wagh <tanay.wagh@314ecorp.com>
+ * @author Tanay Wagh <tanaypwagh@gmail.com>
  * @description Slider Widget
  */
 
@@ -11,9 +11,9 @@ import classnames from 'classnames';
 import useSliderStyles from './useSliderStyles';
 
 const Slider: React.FC<ISliderProps> = (props) => {
-	const { min, max, step, value: propsValue, style, disabled, className, onChange } = props;
+	const { min, max, value: propsValue, defaultValue, style, disabled, className, onChange, ...restProps } = props;
 
-	const [value, setValue] = useState<number>(propsValue);
+	const [value, setValue] = useState<number>(propsValue ?? defaultValue);
 	const classes = useSliderStyles({ theme: style });
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -30,7 +30,7 @@ const Slider: React.FC<ISliderProps> = (props) => {
 	}, [value, max, min]);
 
 	return (
-		<div style={style} className={classnames(classes.sliderWrapper, className)}>
+		<div style={style} className={classnames(classes.sliderWrapper, className, { disabled })}>
 			<div className={classes.circle1}>
 				<div
 					className={classes.circleBorder}
@@ -47,11 +47,11 @@ const Slider: React.FC<ISliderProps> = (props) => {
 				type='range'
 				min={min}
 				max={max}
-				step={step}
 				value={value}
 				disabled={disabled}
 				className={classes.slider}
 				onChange={handleChange}
+				{...restProps}
 			/>
 		</div>
 	);
@@ -60,14 +60,14 @@ const Slider: React.FC<ISliderProps> = (props) => {
 export default Slider;
 
 Slider.defaultProps = {
+	min: 0,
+	value: 5,
+	max: 10,
+	step: 0.01,
 	style: {
 		color: 'blue',
 		borderColor: '#fff',
 		height: '2rem',
 		width: '2rem',
 	},
-	min: 0,
-	value: 5,
-	max: 10,
-	step: 0.01,
 };

@@ -1,5 +1,5 @@
 /**
- * @author Tanay Wagh <tanay.wagh@314ecorp.com>
+ * @author Tanay Wagh <tanaypwagh@gmail.com>
  * @description App styles
  */
 
@@ -7,8 +7,9 @@ import { createUseStyles } from 'react-jss';
 
 const useAppStyles = createUseStyles<string, Theme>({
 	app: {
-		background: '#486a81',
-		borderRadius: '5px',
+		border: '1px solid #cfcece',
+		borderRadius: '6px',
+		padding: '20px',
 	},
 });
 

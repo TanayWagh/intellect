@@ -1,11 +1,11 @@
 /**
- * @author Tanay Wagh <tanay.wagh@314ecorp.com>
+ * @author Tanay Wagh <tanaypwagh@gmail.com>
  * @description Entry point of react application
  */
 
 import React, { useState } from 'react';
 
-import Slider from '../widgets/slider/Slider';
+import Slider from 'components/widgets/slider/Slider';
 import useAppStyles from './useAppStyles';
 
 const App: React.FC = () => {
@@ -21,6 +21,7 @@ const App: React.FC = () => {
 			<Slider
 				value={value}
 				min={0}
+				disabled
 				max={10}
 				style={{ borderColor: '#fff', backgroundColor: '#486a81' }}
 				onChange={handleChange}
