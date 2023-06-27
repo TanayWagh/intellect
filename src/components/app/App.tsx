@@ -3,18 +3,28 @@
  * @description Entry point of react application
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 
-import Slider from '../widgets/Slider';
+import Slider from '../widgets/slider/Slider';
+import useAppStyles from './useAppStyles';
 
 const App: React.FC = () => {
+	const [value, setValue] = useState<number>(5);
+	const classes = useAppStyles();
+
 	const handleChange = (val: number) => {
-		console.log(val);
+		setValue(val);
 	};
 
 	return (
-		<div>
-			<Slider min={0} value={5} step={0.01} max={10} onChange={handleChange} />
+		<div className={classes.app}>
+			<Slider
+				value={value}
+				min={0}
+				max={10}
+				style={{ borderColor: '#fff', backgroundColor: '#486a81' }}
+				onChange={handleChange}
+			/>
 		</div>
 	);
 };

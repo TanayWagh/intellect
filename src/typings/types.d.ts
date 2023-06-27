@@ -3,11 +3,16 @@
  * @description typings
  */
 
-export interface ISliderProps {
-	min: number;
-	max: number;
-	value?: number;
-	step?: number;
-	disabled?: boolean;
-	onChange: (value: number) => void;
+type InputHTMLAttributes = import('react').InputHTMLAttributes<HTMLInputElement>;
+type CSSProperties = import('react').CSSProperties;
+
+interface ISliderProps extends Omit<InputHTMLAttributes, 'value' | 'min' | 'max' | 'onChange'> {
+	value: number;
+	min?: number;
+	max?: number;
+	onChange?: (value: number) => void;
+}
+
+interface Theme {
+	theme?: CSSProperties;
 }
