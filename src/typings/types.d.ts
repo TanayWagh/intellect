@@ -16,3 +16,7 @@ interface ISliderProps extends Omit<InputHTMLAttributes, 'value' | 'min' | 'max'
 interface Theme {
 	theme?: CSSProperties;
 }
+
+type TFactory = () => Promise<{
+	default: React.ComponentType<unknown>;
+}>;

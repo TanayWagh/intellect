@@ -22,7 +22,8 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"paths": {
-			"components/*": ["src/components/*"]
+			"components/*": ["src/components/*"],
+			"styles/*": ["src/styles/*"]
 		}
 	},
 	"exclude": ["node_modules", "dist"]

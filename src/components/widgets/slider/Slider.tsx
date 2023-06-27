@@ -3,11 +3,9 @@
  * @description Slider Widget
  */
 
-// library imports
 import React, { useMemo, useState } from 'react';
 import classnames from 'classnames';
 
-// custom imports
 import useSliderStyles from './useSliderStyles';
 
 const Slider: React.FC<ISliderProps> = (props) => {

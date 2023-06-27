@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 
 import Slider from 'components/widgets/slider/Slider';
 import useAppStyles from './useAppStyles';
+import withAuthentication from 'components/auth/withAuthentication';
 
 const App: React.FC = () => {
 	const [value, setValue] = useState<number>(5);
@@ -17,17 +18,16 @@ const App: React.FC = () => {
 	};
 
 	return (
-		<div className={classes.app}>
+		<section className={classes.app}>
 			<Slider
 				value={value}
 				min={0}
-				disabled
 				max={10}
 				style={{ borderColor: '#fff', backgroundColor: '#486a81' }}
 				onChange={handleChange}
 			/>
-		</div>
+		</section>
 	);
 };
 
-export default App;
+export default withAuthentication(App);

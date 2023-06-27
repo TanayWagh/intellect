@@ -8,7 +8,7 @@ import React from 'react';
 import _ from 'lodash';
 import { render, cleanup, screen, fireEvent } from '@testing-library/react';
 
-import Slider from '../slider/Slider';
+import Slider from '../Slider';
 
 const props1 = { defaultValue: 5, min: 0, max: 10, value: 5 };
 // const props2 = {};
