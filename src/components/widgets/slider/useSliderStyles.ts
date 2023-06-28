@@ -46,17 +46,6 @@ const useSliderStyles = createUseStyles<string, Theme>({
 		alignItems: 'center',
 		backgroundImage: 'url("skybg.png")',
 	},
-	slider: {
-		'&::-webkit-slider-thumb': {
-			'-webkit-appearance': 'none',
-			appearance: 'none',
-			width: '15px',
-			borderRadius: '50%',
-			height: '15px',
-			background: ({ theme }) => theme.borderColor,
-			cursor: 'pointer',
-		},
-	},
 	sliderWrapper: {
 		display: 'inline-grid',
 		gap: '2rem',

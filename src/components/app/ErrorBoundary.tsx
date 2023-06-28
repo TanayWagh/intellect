@@ -1,6 +1,6 @@
 /**
  * @author Tanay Wagh <tanaypwagh@gmail.com>
- * @description Error boundary for application to catch the js errors to avoid breaking of UI
+ * @description Error boundary for application to catch the js errors and avoid breaking of UI
  */
 
 import React, { PropsWithChildren, PureComponent } from 'react';

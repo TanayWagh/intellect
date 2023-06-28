@@ -47,7 +47,6 @@ const Slider: React.FC<ISliderProps> = (props) => {
 				max={max}
 				value={value}
 				disabled={disabled}
-				className={classes.slider}
 				onChange={handleChange}
 				{...restProps}
 			/>
