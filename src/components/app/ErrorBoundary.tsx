@@ -5,10 +5,6 @@
 
 import React, { PropsWithChildren, PureComponent } from 'react';
 
-interface IErrorBoundaryState {
-	hasError: boolean;
-}
-
 class ErrorBoundary extends PureComponent<PropsWithChildren, IErrorBoundaryState> {
 	constructor(props: PropsWithChildren) {
 		super(props);

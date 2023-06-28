@@ -11,7 +11,7 @@ import useSliderStyles from './useSliderStyles';
 const Slider: React.FC<ISliderProps> = (props) => {
 	const { min, max, value: propsValue, defaultValue, style, disabled, className, onChange, ...restProps } = props;
 
-	const [value, setValue] = useState<number>(propsValue ?? defaultValue);
+	const [value, setValue] = useState<number>(propsValue ?? defaultValue ?? 0);
 	const classes = useSliderStyles({ theme: style });
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
