@@ -16,6 +16,7 @@ interface ISliderProps extends Omit<InputHTMLAttributes, 'value' | 'min' | 'max'
 
 interface IRatingProps {
 	value?: number;
+	disabled?: boolean;
 	defaultValue?: number;
 	className?: string;
 	style?: CSSProperties;

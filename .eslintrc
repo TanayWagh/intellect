@@ -7,7 +7,7 @@
 		"jest/globals": true,
 		"node": true
 	},
-	"ignorePatterns": ["prettier.config.js", "buildUtils", "webpack.config.js", "kea.d.ts", "matomo.js", "apis"],
+	"ignorePatterns": ["prettier.config.js", "buildUtils", "webpack.config.js"],
 	"settings": { "react": { "version": "detect" } },
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
@@ -26,8 +26,7 @@
 		"header",
 		"jest",
 		"react",
-		"react-hooks",
-		"@tanstack/query"
+		"react-hooks"
 	],
 	"extends": [
 		"eslint:recommended",
@@ -40,7 +39,6 @@
 		"plugin:@tanstack/eslint-plugin-query/recommended"
 	],
 	"rules": {
-		// L1 Required
 		"@typescript-eslint/array-type": "warn",
 		"@typescript-eslint/consistent-type-assertions": [
 			"error",
@@ -95,7 +93,6 @@
 		"@tanstack/query/exhaustive-deps": "error",
 		"@tanstack/query/prefer-query-object-syntax": "error",
 
-		// L2 Remove if possible
 		"@typescript-eslint/explicit-module-boundary-types": ["error", { "allowArgumentsExplicitlyTypedAsAny": true }],
 		"@typescript-eslint/no-explicit-any": 0,
 		"@typescript-eslint/no-unsafe-assignment": 0,
@@ -103,9 +100,8 @@
 		"@typescript-eslint/no-unsafe-member-access": 0,
 		"@typescript-eslint/no-unsafe-return": 0,
 		"@typescript-eslint/no-unsafe-argument": 0,
-		"@typescript-eslint/no-var-requires": 0, // require being used in importing images
+		"@typescript-eslint/no-var-requires": 0,
 		"@typescript-eslint/restrict-template-expressions": 0,
-		"@typescript-eslint/unbound-method": 0, //creating problem with lodash
 		"jsdoc/no-undefined-types": 0,
 		"jsdoc/require-returns": 0,
 		"jsdoc/require-returns-type": 0,
@@ -113,10 +109,5 @@
 		"jsdoc/require-param-type": 0,
 		"jsdoc/require-param-description": 0,
 		"@typescript-eslint/no-namespace": 0
-
-		// L3 Problem - R and D required
-		// "indent": "off",
-		// "@typescript-eslint/indent": ["error", "tab", { "SwitchCase": 1 }],
-		// "complexity": ["error", 5],
 	}
 }

@@ -16,7 +16,7 @@ const Content: React.FC = () => {
 	return (
 		<div className={classes.flexContainer}>
 			<Slider min={0} max={10} defaultValue={5} style={style} />
-			<Rating style={style} defaultValue={2} />
+			<Rating defaultValue={2} />
 		</div>
 	);
 };

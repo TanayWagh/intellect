@@ -28,6 +28,15 @@ const useRateStyles = createUseStyles<string, Theme>({
 			background: '#fff',
 		},
 
+		'& .hover': {
+			background: '#fff',
+		},
+
+		'& .disabled': {
+			cursor: 'not-allowed',
+			pointerEvents: 'none',
+		},
+
 		'& .rate-1': {
 			width: '77%',
 		},

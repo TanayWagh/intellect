@@ -5,7 +5,6 @@
 
 import '@testing-library/jest-dom/extend-expect';
 import React from 'react';
-import _ from 'lodash';
 import { render, cleanup, screen, fireEvent } from '@testing-library/react';
 
 import Slider from '../Slider';
