@@ -5,6 +5,7 @@
 
 import { createContext } from 'react';
 
+// A global theme context can be created which will be used to apply global styles to the child components
 const ThemeContext = createContext<CSSProperties>({});
 
 export default ThemeContext;

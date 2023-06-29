@@ -14,13 +14,14 @@ const Rating: React.FC<IRatingProps> = (props) => {
 	const { value: propsValue, defaultValue, disabled, className, style, onChange } = props;
 
 	const [value, setValue] = useState(propsValue ?? defaultValue ?? 0); // to maintain the value state
-	const [hoverValue, setHoverValue] = useState<number | null>(null); // not necessary. Used show hover effect on div hover
-
+	const [hoverValue, setHoverValue] = useState<number | null>(null); // not necessary. Used to show hover effect on div hover
 	const classes = useRatingStyles({ theme: style });
 
 	const handleClick = (val: number) => {
-		setValue(val);
-		onChange?.(val);
+		const changedValue = value === val ? 0 : val;
+		setValue(changedValue);
+		onChange?.(changedValue);
+		setHoverValue(null);
 	};
 
 	const handleMouseEnter = (val: number) => {
