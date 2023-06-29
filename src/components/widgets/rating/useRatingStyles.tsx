@@ -7,14 +7,14 @@ import { createUseStyles } from 'react-jss';
 
 const useRateStyles = createUseStyles<string, Theme>({
 	rate: {
-		height: ({ theme }) => theme?.height ?? '17rem',
-		width: ({ theme }) => theme?.width ?? '14rem',
 		display: 'flex',
 		flexDirection: 'column',
 		gap: '12px',
 		alignItems: 'center',
-		borderRadius: '6px',
 		justifyContent: 'center',
+		height: ({ theme }) => theme?.height ?? '17rem',
+		width: ({ theme }) => theme?.width ?? '14rem',
+		borderRadius: ({ theme }) => theme?.borderRadius ?? '6px',
 		background: ({ theme }) => theme?.backgroundColor ?? 'rgb(72, 106, 129)',
 
 		'& > div': {
@@ -64,7 +64,7 @@ const useRateStyles = createUseStyles<string, Theme>({
 
 		'& .left-triangle': {
 			position: 'absolute',
-			top: '6px',
+			top: ({ theme }) => theme?.borderRadius ?? '6px',
 			pointerEvents: 'none',
 			borderTop: '240px solid transparent',
 			borderLeft: '118px solid rgb(72, 106, 129)',
@@ -72,7 +72,7 @@ const useRateStyles = createUseStyles<string, Theme>({
 
 		'& .right-triangle': {
 			position: 'absolute',
-			top: '6px',
+			top: ({ theme }) => theme?.borderRadius ?? '6px',
 			right: 0,
 			pointerEvents: 'none',
 			borderTop: '240px solid transparent',

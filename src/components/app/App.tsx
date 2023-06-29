@@ -6,14 +6,19 @@
 import React from 'react';
 
 import Content from './Content';
+import ThemeContext from 'components/theme/ThemeContext';
+import theme from 'components/theme/theme';
 import withAuthentication from 'components/auth/withAuthentication';
 
 const App: React.FC = () => {
 	return (
-		<section>
-			{/* <Header /> */}
-			<Content />
-		</section>
+		<ThemeContext.Provider value={theme}>
+			{/* Globally providing theme context on top level to be consumed by child components */}
+			<section>
+				{/* <Header /> */}
+				<Content />
+			</section>
+		</ThemeContext.Provider>
 	);
 };
 

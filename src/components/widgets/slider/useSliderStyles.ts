@@ -50,8 +50,8 @@ const useSliderStyles = createUseStyles<string, Theme>({
 		display: 'inline-grid',
 		gap: '2rem',
 		padding: '1rem',
-		borderRadius: '6px',
 		width: 'fit-content',
+		borderRadius: ({ theme }) => theme?.borderRadius ?? '6px',
 	},
 });
 
