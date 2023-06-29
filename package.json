@@ -7,11 +7,13 @@
 		"build": "webpack --env production",
 		"analyze": "webpack --env production --env analyze",
 		"test": "jest --env=jsdom",
-		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"postinstall": "husky install"
 	},
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"classnames": "^2.3.2",
+		"husky": "^8.0.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-jss": "^10.10.0"
