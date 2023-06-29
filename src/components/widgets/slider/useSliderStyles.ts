@@ -8,8 +8,8 @@ import { createUseStyles } from 'react-jss';
 const useSliderStyles = createUseStyles<string, Theme>({
 	circle1: {
 		border: ({ theme }) => `1px dashed ${theme.borderColor}`,
-		height: ({ theme }) => theme?.height ?? '12rem',
-		width: ({ theme }) => theme?.width ?? '12rem',
+		height: '12rem',
+		width: '12rem',
 		borderRadius: '50%',
 		maxWidth: '100%',
 		display: 'flex',
@@ -51,6 +51,7 @@ const useSliderStyles = createUseStyles<string, Theme>({
 		gap: '2rem',
 		padding: '1rem',
 		width: 'fit-content',
+		background: ({ theme }) => theme?.backgroundColor ?? 'rgb(72, 106, 129)',
 		borderRadius: ({ theme }) => theme?.borderRadius ?? '6px',
 	},
 });

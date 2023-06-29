@@ -7,12 +7,14 @@ import React, { useMemo, useState } from 'react';
 import classnames from 'classnames';
 
 import useSliderStyles from './useSliderStyles';
+import useTheme from 'components/theme/useTheme';
 
 const Slider: React.FC<ISliderProps> = (props) => {
 	const { min, max, value: propsValue, defaultValue, style, disabled, className, onChange, ...restProps } = props;
 
 	const [value, setValue] = useState<number>(propsValue ?? defaultValue ?? 0); // to maintain the value state
-	const classes = useSliderStyles({ theme: style });
+	const theme = useTheme();
+	const classes = useSliderStyles({ theme });
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const changedValue = parseFloat(e.target.value);
@@ -64,7 +66,7 @@ Slider.defaultProps = {
 	style: {
 		color: 'blue',
 		borderColor: '#fff',
-		height: '2rem',
-		width: '2rem',
+		height: '15rem',
+		width: '12rem',
 	},
 };

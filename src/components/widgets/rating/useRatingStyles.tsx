@@ -12,8 +12,8 @@ const useRateStyles = createUseStyles<string, Theme>({
 		gap: '12px',
 		alignItems: 'center',
 		justifyContent: 'center',
-		height: ({ theme }) => theme?.height ?? '17rem',
-		width: ({ theme }) => theme?.width ?? '14rem',
+		height: '17rem',
+		width: '14rem',
 		borderRadius: ({ theme }) => theme?.borderRadius ?? '6px',
 		background: ({ theme }) => theme?.backgroundColor ?? 'rgb(72, 106, 129)',
 
