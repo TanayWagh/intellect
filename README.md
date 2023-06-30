@@ -35,7 +35,7 @@ In React, data generally flows from parent components to child components throug
 ##### Web App
 For my assignment, I have developed a React application using the latest version of React (version 18) and Webpack as the bundler. The application showcases modern practices and incorporates several essential features, including error boundaries, code splitting, lazy loading, user authentication, widgets, and components.
 
-In addition to the core application, I have implemented two custom widgets: a **Slider** component and a **Steps** component. Throughout the codebase, I have emphasized the importance of testing by including comprehensive **test cases** and appropriate comments where necessary. This ensures the reliability and stability of the application.
+In addition to the core application, I have implemented two custom widgets: a **Slider** component and a **Rating** component. Throughout the codebase, I have emphasized the importance of testing by including comprehensive **test cases** and appropriate comments where necessary. This ensures the reliability and stability of the application.
 
 Furthermore, I have included comments suggesting the inclusion of additional components like headers and layout for future expansion into a fully-fledged application. Although these components are not required for the assignment, they demonstrate the potential scalability and extensibility of the project. I have also included a **husky pre-commit** check, which prevents developers from pushing code to a remote branch if any test cases fail.
 
