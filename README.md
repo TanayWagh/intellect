@@ -72,7 +72,7 @@ The Slider component accepts the following props:
 | style        | Custom styles to be applied to the Slider component                      | -       | CSSProperties |
 | onChange     | A callback function that is invoked when the value of the slider changes | -       | function      |
 
-### Ratings
+### Rating
 
 The Rating component is a customizable rating widget that allows users to rate items on a scale.
 
