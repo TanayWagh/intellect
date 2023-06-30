@@ -170,6 +170,29 @@ These improvements and additions will enhance the overall functionality, visual 
 
 - Throughout the project, I will maintain effective communication with stakeholders, providing regular progress updates and gathering feedback. Additionally, I will focus on optimizing the React app for performance, considering factors like bundle size, lazy loading, code splitting, and caching. This will ensure fast loading times and a smooth user experience
 
+#### Q3: Please provide all the libraries/frameworks you have experience with examples(not limited to ReactJS). Eg. chart, sockets.
+| Name                                 | Description                                                                      |
+| ------------------------------------ | -------------------------------------------------------------------------------- |
+| React Native                         | To create native mobile application                                              |
+| Expo                                 | To create native mobile application                                              |
+| Ant Design                           | set of High quality react components                                             |
+| Antd Design Charts, Ant Design Plots | To create insights dashboard for displaying data                                 |
+| React Awesome Query Builder          | To create advance queries for elastic search                                     |
+| React Router                         | To create Navigation in web application                                          |
+| Kea Logic                            | Redux store for web application                                                  |
+| Lexical.dev                          | To Develop Richtext editor                                                       |
+| Moment Js, Day Js                    | To perform Time related calculations                                             |
+| Next Js                              | Personal Portfolio                                                               |
+| Node Js                              | Basic idea about server side code                                                |
+| React Audio Voice Recorder           | To record audio in web application                                               |
+| React grid layout                    | For drag-drop and resize functionality of widgets                                |
+| React Beautiful Dnd                  | Creating Kanban board                                                            |
+| Formily                              | Create high quality dynamic forms                                                |
+| Material Ui                          | Used several components in different projects                                    |
+| Lodash                               | Javascript calculations                                                          |
+| Fast Api                             | CRUD operations for writing apis                                                 |
+| Pluraize                             | Display plural/singular form throughout the codebase                             |
+| React shadow root                    | Used to render html inside shadow root to prevent from style injections sattacks |
 
 
 
