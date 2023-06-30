@@ -13,7 +13,7 @@ npm run dev
 Open [http://localhost:7000](http://localhost:7000) with your browser to see the result.
 
 ## Demo
-The project has been deployed at intellect-flame.vercel.app
+The project has been deployed at https://intellect-flame.vercel.app
 
 
 ![image](https://github.com/TanayWagh/intellect/assets/85330943/d50cac4c-1476-4605-b6e2-719b9df26551)
