@@ -135,6 +135,19 @@ Within the application, a custom component named **Lazy.tsx** has been implement
 #### User Authentication (withAuthentication Higher Order Component)
 User authentication is a critical aspect of the development process, ensuring that users are authorized to access certain components or features. In this application, I have implemented a Higher Order Component (HOC) that handles the authentication flow. The HOC communicates with the server, sending authentication requests and retrieving the corresponding authentication response. If the user is not authenticated, the HOC automatically redirects them to the login page, safeguarding the application's security and protecting sensitive information.
 
+##### CSS 
+In this assignment, I utilized CSS-in-JS technology to apply styles directly within my React components. The advantages of using this approach are:
+
+- **Component-based styling**: Styles are scoped to specific components, promoting modularity and easier maintenance.
+- **Elimination of class name collisions**: No need to manage unique class names, reducing the potential for conflicts. (Specificity issue)
+- **Dynamic and responsive styles**: Styles can be generated dynamically based on component props or states, allowing for adaptable and interactive UIs.
+- **Improved developer experience**: Styles and component logic are written together, simplifying codebase understanding and reducing cognitive overhead.
+- **Enhanced code organization and readability**: Styles are colocated with components, facilitating better code organization and making it easier to grasp how styles are applied.
+- **Support for static typing**: Integration with TypeScript enables catching style-related errors at compile time for more reliable code.
+- **Better performance optimizations**: CSS-in-JS libraries often include performance optimizations, leading to reduced CSS size and improved rendering performance.
+
+In this assignment, I have implemented a **global theme context** using **React's createContext** feature. This context allows for the application of a consistent global theme across all child components. By utilizing this context, the styling and visual appearance of the components can be easily managed and updated in a centralized manner, ensuring a cohesive and harmonious user experience throughout the application.
+
 ##### Possible Improvements and Additions
 - **Global Theming**: Creating a global theme context to manage the overall theme of the web application. This will allow for consistent and centralized control of the application's visual style and enhance customization options for users.
 - **Expandable Widget Props**: Allow for additional customization of the widgets by supporting extra props. This will provide users with more flexibility and options to adapt the widgets to their specific use cases. Consider identifying common use cases and implementing prop configurations accordingly.
@@ -146,6 +159,16 @@ User authentication is a critical aspect of the development process, ensuring th
 
 These improvements and additions will enhance the overall functionality, visual appeal, and user experience of this web application.
 
+#### Q2: Assume you have to develop a web app for our existing mobile application, how will you plan the project?
+- First, I will analyze the existing mobile application to understand its architecture, UI/UX design, and functionality. I'll identify reusable code and components that can be leveraged in web app development. To streamline development, I will adopt a mono repo approach, housing all the code related to both the mobile and web applications. This way, we can reuse common components in both applications, saving time and effort.
+
+- Next, I will set up the development environment by configuring the necessary tools and frameworks, similar to what I did for the web application for Q1. To ensure an organized project structure, I will create a folder structure for the React web app. This will involve organizing components, stylesheets, assets, and other files based on their functionalities and relationships. Additionally, I will break down the screens from the mobile app into reusable React components. This approach will facilitate easier development and maintenance of the web app.
+
+- Once everything is set up, I will start implementing the React components based on the wireframes and designs. For consistent styling across the web app, I will apply styles using a CSS-in-JS solution. I prefer using the react-jss library, which will ensure that the web app's styling matches the design of the existing mobile app.
+
+- To maintain code quality, I will write unit tests using Jest. I will also integrate the tests with pre-commit and pre-push hooks using Husky, ensuring that tests are run automatically before committing or pushing code changes. I will also add an analytics tool to figure out how users are using the application.
+
+- Throughout the project, I will maintain effective communication with stakeholders, providing regular progress updates and gathering feedback. Additionally, I will focus on optimizing the React app for performance, considering factors like bundle size, lazy loading, code splitting, and caching. This will ensure fast loading times and a smooth user experience
 
 
 
