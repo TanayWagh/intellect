@@ -99,9 +99,52 @@ The Rating component accepts the following props:
 | style        | Custom styles to be applied to the rating component                      | -       | CSSProperties |
 | onChange     | A callback function that is invoked when the value of the rating changes | -       | function      |
 
+Here is the additional description of other features:
 
+##### Webpack
+Webpack is a powerful static module bundler for JavaScript applications. It simplifies the process of converting code from multiple files into one or more output files, resulting in a more efficient application. By reducing the number of requests and improving loading speed, Webpack enhances the overall performance of the application. Additionally, it effectively manages dependencies, making it easier to organize and maintain complex projects.
 
+In the current application, there are three Webpack files:
+- Common File (**webpack.config.js**): This file serves as the main configuration file for Webpack, providing the settings and options required for both development and production builds.
+- Development Build (**webpack.development.js**): This specific Webpack configuration file is optimized for the development environment. It includes features like source mapping (inline-source-map in our case) to aid in the debugging and rapid development process.
+- Production Build (**webpack.production.js**): The production build configuration file is tailored for optimizing the application for deployment. It typically includes optimizations such as code minification, different plugins such as MiniCssExtractPlugin, ProgressBarPlugin, and caching strategies to enhance performance and reduce the file size of the application.
 
+##### EntryPoint (index.tsx)
+In the **index.html** file, there is a div element designated to render our React application. This rendering process takes place within the **index.tsx** file, where we utilize the "createRoot" feature provided by "react-dom/client". It allows us to render our application to the root container, ensuring proper integration and display on the web page.
+
+##### React StrictMode (<React.StrictMode>)
+The StrictMode component in React is a developer tool that helps identify potential problems in the application. It highlights potential issues and suggests improvements without affecting the production build.
+Highlighting deprecated features
+Preventing accidental side effects
+Detecting unsafe lifecycle methods
+
+##### React ErrorBoundary (ErrorBoundary.tsx)
+Error boundaries in React are special components that handle JavaScript errors occurring within their child component tree. They effectively catch these errors, log them, and display an alternative UI instead of the crashed component tree.
+
+Currently, error boundaries can only be implemented using class components. The current application will show **Something went wrong. Please contact Admin… message on UI**. We can render custom components such as <ReachException/> which can display custom messages or additional images as a fallback UI.
+
+##### Lazy Loading of Application (Lazy.tsx)
+Instead of loading the entire application upfront, lazy loading allows for a more optimized and efficient user experience. Some of its advantages include
+- Faster initial load time
+- Reduced resource usage
+- Optimized caching
+- Better scalability
+
+Within the application, a custom component named **Lazy.tsx** has been implemented to facilitate the lazy loading of child components. This component utilizes React Suspense, which allows for the rendering of a fallback message while the content is being asynchronously loaded. This ensures a smooth user experience by providing visual feedback until the desired content is ready to be displayed on the UI.
+
+#### User Authentication (withAuthentication Higher Order Component)
+User authentication is a critical aspect of the development process, ensuring that users are authorized to access certain components or features. In this application, I have implemented a Higher Order Component (HOC) that handles the authentication flow. The HOC communicates with the server, sending authentication requests and retrieving the corresponding authentication response. If the user is not authenticated, the HOC automatically redirects them to the login page, safeguarding the application's security and protecting sensitive information.
+
+##### Possible Improvements and Additions
+- **Global Theming**: Creating a global theme context to manage the overall theme of the web application. This will allow for consistent and centralized control of the application's visual style and enhance customization options for users.
+- **Expandable Widget Props**: Allow for additional customization of the widgets by supporting extra props. This will provide users with more flexibility and options to adapt the widgets to their specific use cases. Consider identifying common use cases and implementing prop configurations accordingly.
+- **Additional Components**: For future expansion into a fully-fledged application, consider creating additional components such as a header, footer, sidebar, or other common UI elements. These components will provide a consistent layout and navigation structure throughout the application.
+- **Enhanced Responsive Design**: Although you have implemented a basic responsive design using CSS-in-JS technology, further design improvements can be made to enhance the visual appeal of the application. Consider incorporating animations, transitions, or other visual effects based on the specific requirements to create a more engaging user experience.
+- **Fallback UI Designs**: Instead of displaying only error messages during loading or when encountering React exceptions, consider incorporating fallback UI designs. These designs can include placeholders, loaders, or alternative content to maintain a smooth user experience even when data or components are loading or unavailable.
+- **Improved Documentation**: To increase readability and simplicity, consider separating the documentation based on each feature or functionality. This approach will make it easier for users and developers to navigate and understand the specific aspects of the application. Additionally, providing clear examples and usage scenarios will further improve the documentation's effectiveness.
+- **Navigation**: Although not deemed necessary for this particular project, consider adding navigation functionality using React Router or similar libraries. This will demonstrate experience in managing routes and improving user flow within the application.
+
+These improvements and additions will enhance the overall functionality, visual appeal, and user experience of this web application.
 
 
 
