@@ -121,7 +121,7 @@ Detecting unsafe lifecycle methods
 ##### React ErrorBoundary (ErrorBoundary.tsx)
 Error boundaries in React are special components that handle JavaScript errors occurring within their child component tree. They effectively catch these errors, log them, and display an alternative UI instead of the crashed component tree.
 
-Currently, error boundaries can only be implemented using class components. The current application will show **Something went wrong. Please contact Admin… message on UI**. We can render custom components such as <ReachException/> which can display custom messages or additional images as a fallback UI.
+Currently, error boundaries can only be implemented using class components. The current application will show **Something went wrong. Please contact Admin…** message on UI. We can render custom components such as <ReachException/> which can display custom messages or additional images as a fallback UI.
 
 ##### Lazy Loading of Application (Lazy.tsx)
 Instead of loading the entire application upfront, lazy loading allows for a more optimized and efficient user experience. Some of its advantages include
@@ -187,14 +187,37 @@ These improvements and additions will enhance the overall functionality, visual 
 | React Audio Voice Recorder           | To record audio in web application                                               |
 | React grid layout                    | For drag-drop and resize functionality of widgets                                |
 | React Beautiful Dnd                  | Creating Kanban board                                                            |
-| Formily                              | Create high quality dynamic forms                                                |
+| Formily                              | Create high-quality dynamic forms                                                |
 | Material Ui                          | Used several components in different projects                                    |
 | Lodash                               | Javascript calculations                                                          |
 | Fast Api                             | CRUD operations for writing apis                                                 |
 | Pluralize                            | Display plural/singular form throughout the codebase                             |
 | React shadow root                    | Used to render html inside shadow root to prevent style injections attacks       |
 
-#### Q4: Install the Intellect app (you can install the app from this link), go through the flow of the app and detect user experience issues in Intellect app. Map out what your findings are
+#### Q4: Install the Intellect app (you can install the app from this link), go through the flow of the app and detect user experience issues in Intellect app. Map out what your findings are.
+
+Congratulations on creating a beautifully designed and user-friendly app!
+In my opinion, these are some of the minor issues which we can improve on:
+
+1. We should add some margin-bottom to ADD GOAL Button at the bottom. Right now, it's touching the bottom.
+   
+   <img width="336" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/2057208e-0733-4f22-8054-f4a3e729f52e">
+
+2. Cross mark on the top right is colliding with the text beside it.
+   
+   <img width="333" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/1a2f1e77-97f8-4dcb-bcd1-a665badf12d0">
+
+3. There is a lot of gap between the input line and the text written in the input box (Fbbvvvv) (Probably due to the expandable icon).
+   
+   <img width="333" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/ab97ece0-c825-421f-8a2e-3365e647b26c">
+
+4. The 3 dots icon on the top right is usually used to display the dropdown there itself. But I realized that it always opens the drawer from the bottom. In my opinion, its a bad user experience since the user has to go down to bottom to perform the next action after clicking on the three dots icon
+   
+   <img width="333" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/b49d1b3f-0879-4e9d-ac7a-03a6848ea165">
+
+
+
+
 
 
 
