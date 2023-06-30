@@ -15,8 +15,8 @@ Open [http://localhost:7000](http://localhost:7000) with your browser to see the
 ## Demo
 The project has been deployed at https://intellect-flame.vercel.app
 
+<img width="804" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/7493da35-b0e5-48c6-a5f1-529e778f5bf1">
 
-![image](https://github.com/TanayWagh/intellect/assets/85330943/d50cac4c-1476-4605-b6e2-719b9df26551)
 
 ## Coding Conventions followed
 https://github.com/airbnb/javascript
@@ -201,19 +201,21 @@ In my opinion, these are some of the minor issues which we can improve on:
 
 1. We should add some margin-bottom to ADD GOAL Button at the bottom. Right now, it's touching the bottom.
    
-   <img width="336" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/2057208e-0733-4f22-8054-f4a3e729f52e">
+  <img width="333" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/ddfe69c7-55bb-4e32-9f9a-5c852264d0b7">
 
 2. Cross mark on the top right is colliding with the text beside it.
    
-   <img width="333" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/1a2f1e77-97f8-4dcb-bcd1-a665badf12d0">
+<img width="333" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/5f22244a-a128-43fd-9513-d61adfe909a5">
 
 3. There is a lot of gap between the input line and the text written in the input box (Fbbvvvv) (Probably due to the expandable icon).
    
-   <img width="333" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/ab97ece0-c825-421f-8a2e-3365e647b26c">
+ <img width="333" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/6f2c7609-9c72-4d58-9235-a9e4376a03a4">
+
 
 4. The 3 dots icon on the top right is usually used to display the dropdown there itself. But I realized that it always opens the drawer from the bottom. In my opinion, its a bad user experience since the user has to go down to bottom to perform the next action after clicking on the three dots icon
-   
-   <img width="333" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/b49d1b3f-0879-4e9d-ac7a-03a6848ea165">
+
+<img width="333" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/f5286414-d683-41c0-ba0e-22c3275c595d">
+
 
 
 
