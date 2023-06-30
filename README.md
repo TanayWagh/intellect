@@ -15,6 +15,9 @@ Open [http://localhost:7000](http://localhost:7000) with your browser to see the
 ## Demo
 The project has been deployed at https://intellect-git-sprint-tanaywagh.vercel.app/
 
+
+![image](https://github.com/TanayWagh/intellect/assets/85330943/d50cac4c-1476-4605-b6e2-719b9df26551)
+
 ## Coding Conventions followed
 https://github.com/airbnb/javascript
 
@@ -40,7 +43,7 @@ Overall, the React application demonstrates proficiency in utilizing modern tool
 
 ##### Widgets
 
-**Slider**
+### Slider
 A customizable slider widget that allows users to select a value within a specified range.
 
 Usage: 
@@ -69,7 +72,32 @@ The Slider component accepts the following props:
 | style        | Custom styles to be applied to the Slider component                      | -       | CSSProperties |
 | onChange     | A callback function that is invoked when the value of the slider changes | -       | function      |
 
+### Ratings
 
+The Rating component is a customizable rating widget that allows users to rate items on a scale.
+
+Usage: 
+To use the Rating component, include it in your React component and configure it using the available props:
+- import Rating from './Rating';
+- Example usage
+```jsx
+import React from 'react';
+import Rating from './Rating';
+
+const App = () => (
+ <Rating value={3} onChange={handleRatingChange} />
+);
+```
+Props:
+The Rating component accepts the following props:
+| Name         | Description                                                              | Default | Data Type     |
+| ------------ | ------------------------------------------------------------------------ | ------- | ------------- |
+| value        | The current value of the rating                                          | 0       | number        |
+| defaultValue | The default value of the rating                                          | 2       | number        |
+| disabled     | Determines if the rating component is disabled                           | false   | boolean       |
+| className    | Additional CSS class(es) to be applied to the rating component           | -       | string        |
+| style        | Custom styles to be applied to the rating component                      | -       | CSSProperties |
+| onChange     | A callback function that is invoked when the value of the rating changes | -       | function      |
 
 
 
