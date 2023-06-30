@@ -17,11 +17,11 @@ The project has been deployed at https://intellect-flame.vercel.app
 
 <img width="804" alt="image" src="https://github.com/TanayWagh/intellect/assets/85330943/7493da35-b0e5-48c6-a5f1-529e778f5bf1">
 
-
 ## Coding Conventions followed
 https://github.com/airbnb/javascript
 
 https://github.com/ryanmcdermott/clean-code-javascrip
+
 
 ## Documentation
 
@@ -35,9 +35,9 @@ In React, data generally flows from parent components to child components throug
 ##### Web App
 For my assignment, I have developed a React application using the latest version of React (version 18) and Webpack as the bundler. The application showcases modern practices and incorporates several essential features, including error boundaries, code splitting, lazy loading, user authentication, widgets, and components.
 
-In addition to the core application, I have implemented two custom widgets: a Slider component and a Steps component. Throughout the codebase, I have emphasized the importance of testing by including comprehensive test cases and appropriate comments where necessary. This ensures the reliability and stability of the application.
+In addition to the core application, I have implemented two custom widgets: a **Slider** component and a **Steps** component. Throughout the codebase, I have emphasized the importance of testing by including comprehensive **test cases** and appropriate comments where necessary. This ensures the reliability and stability of the application.
 
-Furthermore, I have included comments suggesting the inclusion of additional components like headers and layout for future expansion into a fully-fledged application. Although these components are not required for the assignment, they demonstrate the potential scalability and extensibility of the project. I have also included a husky pre-commit check, which prevents developers from pushing code to a remote branch if any test cases fail.
+Furthermore, I have included comments suggesting the inclusion of additional components like headers and layout for future expansion into a fully-fledged application. Although these components are not required for the assignment, they demonstrate the potential scalability and extensibility of the project. I have also included a **husky pre-commit** check, which prevents developers from pushing code to a remote branch if any test cases fail.
 
 Overall, the React application demonstrates proficiency in utilizing modern tools and practices, while also showcasing attention to detail and potential for future enhancements.
 
@@ -114,14 +114,15 @@ In the **index.html** file, there is a div element designated to render our Reac
 
 ##### React StrictMode (<React.StrictMode>)
 The StrictMode component in React is a developer tool that helps identify potential problems in the application. It highlights potential issues and suggests improvements without affecting the production build.
-Highlighting deprecated features
-Preventing accidental side effects
-Detecting unsafe lifecycle methods
+
+- Highlighting deprecated features
+- Preventing accidental side effects
+- Detecting unsafe lifecycle methods
 
 ##### React ErrorBoundary (ErrorBoundary.tsx)
 Error boundaries in React are special components that handle JavaScript errors occurring within their child component tree. They effectively catch these errors, log them, and display an alternative UI instead of the crashed component tree.
 
-Currently, error boundaries can only be implemented using class components. The current application will show **Something went wrong. Please contact Admin…** message on UI. We can render custom components such as <ReachException/> which can display custom messages or additional images as a fallback UI.
+Currently, error boundaries can only be implemented using class components. The current application will show **Something went wrong. Please contact Admin…** message on UI. We can render custom components such as **<ReachException/>** which can display custom messages or additional images as a fallback UI.
 
 ##### Lazy Loading of Application (Lazy.tsx)
 Instead of loading the entire application upfront, lazy loading allows for a more optimized and efficient user experience. Some of its advantages include
