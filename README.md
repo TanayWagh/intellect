@@ -191,9 +191,10 @@ These improvements and additions will enhance the overall functionality, visual 
 | Material Ui                          | Used several components in different projects                                    |
 | Lodash                               | Javascript calculations                                                          |
 | Fast Api                             | CRUD operations for writing apis                                                 |
-| Pluraize                             | Display plural/singular form throughout the codebase                             |
-| React shadow root                    | Used to render html inside shadow root to prevent from style injections sattacks |
+| Pluralize                            | Display plural/singular form throughout the codebase                             |
+| React shadow root                    | Used to render html inside shadow root to prevent style injections attacks       |
 
+#### Q4: Install the Intellect app (you can install the app from this link), go through the flow of the app and detect user experience issues in Intellect app. Map out what your findings are
 
 
 
