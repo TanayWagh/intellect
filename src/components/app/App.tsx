@@ -15,11 +15,11 @@ const App: React.FC = () => {
 		<ThemeContext.Provider value={theme}>
 			{/* Globally providing theme context on top level to be consumed by child components */}
 			<section>
-				{/* <Header /> */}
+				{/* <Header />  // Header component as a possible addition in future*/}
 				<Content />
 			</section>
 		</ThemeContext.Provider>
 	);
 };
 
-export default withAuthentication(App);
+export default withAuthentication(App); // Wrapped with withAuthentication HOC to incorporate authentication of user

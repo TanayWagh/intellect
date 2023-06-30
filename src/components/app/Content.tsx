@@ -11,7 +11,7 @@ import useTheme from 'components/theme/useTheme';
 import useAppStyles from './useAppStyles';
 
 const Content: React.FC = () => {
-	const theme = useTheme();
+	const theme = useTheme(); // consuming global theme
 	const classes = useAppStyles({ theme });
 
 	return (

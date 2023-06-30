@@ -1,6 +1,6 @@
 /**
  * @author Tanay Wagh <tanaypwagh@gmail.com>
- * @description typings
+ * @description typings for app
  */
 
 type InputHTMLAttributes = import('react').InputHTMLAttributes<HTMLInputElement>;
